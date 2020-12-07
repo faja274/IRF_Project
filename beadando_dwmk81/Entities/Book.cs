@@ -14,6 +14,6 @@ namespace beadando_dwmk81.Entities
         public string Title { get; set; }
         public int Year { get; set; }
         public double Price { get; set; }
-        public DateTime SellDate { get; set; }
+        public int Amount { get; set; }
     }
 }
