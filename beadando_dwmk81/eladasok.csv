@@ -1,0 +1,105 @@
+﻿ID;TOPIC;AUTHOR;TITLE;YEAR;PRICE;SELLDATE
+1;Kids;J. K. Rowling;Harry Potter 1;1999;10;2020-11-01
+2;Kids;J. K. Rowling;Harry Potter 2;2001;10;2020-11-06
+3;Kids;J. K. Rowling;Harry Potter 3;2002;10;2020-11-07
+4;Kids;J. K. Rowling;Harry Potter 4;2004;13;2020-11-20
+5;Kids;J. K. Rowling;Harry Potter 5;2005;13;2020-11-30
+6;Kids;J. K. Rowling;Harry Potter 6;2006;13;2020-11-02
+7;Kids;J. K. Rowling;Harry Potter 7;2008;13;2020-11-04
+8;Kids;A. Wallace;How to Catch a Unicorn;2007;8;2020-11-01
+9;Kids;A. Wallace;How to Catch a Unicorn;2007;8;2020-11-03
+10;Kids;R. Riordan;The Lightning Thief;2005;11;2020-11-04
+11;Kids;E. Hill;Where's Spot?;2010;7;2020-11-05
+12;Kids;E. Hill;Where's Spot?;2010;7;2020-11-06
+13;Kids;E. Hill;Where's Spot?;2010;7;2020-11-07
+14;Kids;J. Donaldson;The Snail and the Whale;2013;9;2020-11-08
+15;Kids;J. Donaldson;The Snail and the Whale;2013;9;2020-11-09
+16;Kids;J. Donaldson;The Snail and the Whale;2013;9;2020-11-10
+17;Kids;J. Donaldson;The Snail and the Whale;2013;9;2020-11-11
+18;Kids;J. Donaldson;Zog;2011;9;2020-11-12
+19;Kids;J. Kerr;The Tiger Who Came to Tea;2013;6;2020-11-13
+20;Kids;J. Kerr;The Tiger Who Came to Tea;2013;6;2020-11-14
+21;Sport;J. Wilson;Inverting The Pyramid;2008;15;2020-11-10
+22;Sport;J. Wilson;Inverting The Pyramid;2008;15;2020-11-11
+23;Sport;J. Wilson;Inverting The Pyramid;2008;15;2020-11-12
+24;Sport;J. Wilson;Inverting The Pyramid;2008;15;2020-11-13
+25;Sport;J. Wilson;Inverting The Pyramid;2008;15;2020-11-14
+26;Sport;J. Wilson;Inverting The Pyramid;2008;15;2020-11-23
+27;Sport;J. Wilson;Inverting The Pyramid;2008;15;2020-11-30
+28;Sport;J. Wilson;Inverting The Pyramid;2008;15;2020-11-24
+29;Sport;J. Wilson;Inverting The Pyramid;2008;15;2020-11-02
+30;Sport;J. Wilson;Inverting The Pyramid;2008;15;2020-11-03
+31;Sport;M. Cox;The Mixer;2017;14;2020-11-03
+32;Sport;M. Cox;The Mixer;2017;14;2020-11-03
+33;Sport;M. Cox;The Mixer;2017;14;2020-11-03
+34;Sport;M. Cox;The Mixer;2017;14;2020-11-03
+35;Sport;M. Cox;The Mixer;2017;14;2020-11-05
+36;Sport;G. Hunter;Barca;2012;13;2020-11-05
+37;Sport;G. Hunter;Barca;2012;13;2020-11-07
+38;History;Y. N. Harari;Sapiens;2011;12;2020-11-07
+39;History;Y. N. Harari;Sapiens;2011;12;2020-11-20
+40;History;Y. N. Harari;Sapiens;2011;12;2020-11-21
+41;History;Y. N. Harari;Sapiens;2011;12;2020-11-22
+42;History;Y. N. Harari;Sapiens;2011;12;2020-11-23
+43;History;Y. N. Harari;Sapiens;2011;12;2020-11-24
+44;History;Y. N. Harari;Sapiens;2011;12;2020-11-25
+45;History;Y. N. Harari;Sapiens;2011;12;2020-11-26
+46;History;Y. N. Harari;Sapiens;2011;12;2020-11-27
+47;History;Y. N. Harari;Sapiens;2011;12;2020-11-28
+48;History;Y. N. Harari;Sapiens;2011;12;2020-11-29
+49;History;Y. N. Harari;Sapiens;2011;12;2020-11-30
+50;History;Y. N. Harari;Sapiens;2011;12;2020-11-01
+51;History;Y. N. Harari;Sapiens;2011;12;2020-11-02
+52;History;I. Wilkerson;The Warmth of Other Suns;2010;16;2020-11-03
+53;History;I. Wilkerson;The Warmth of Other Suns;2010;16;2020-11-04
+54;History;I. Wilkerson;The Warmth of Other Suns;2010;16;2020-11-05
+55;History;I. Wilkerson;The Warmth of Other Suns;2010;16;2020-11-06
+56;History;I. Wilkerson;The Warmth of Other Suns;2010;16;2020-11-07
+57;History;I. Wilkerson;The Warmth of Other Suns;2010;16;2020-11-08
+58;History;I. Wilkerson;The Warmth of Other Suns;2010;16;2020-11-09
+59;History;I. Wilkerson;The Warmth of Other Suns;2010;16;2020-11-10
+60;History;I. Wilkerson;The Warmth of Other Suns;2010;16;2020-11-11
+61;History;A. J. Baime;The Accidental President;2017;14;2020-11-12
+62;History;A. J. Baime;The Accidental President;2017;14;2020-11-13
+63;History;A. J. Baime;The Accidental President;2017;14;2020-11-14
+64;History;A. J. Baime;The Accidental President;2017;14;2020-11-15
+65;History;A. J. Baime;The Accidental President;2017;14;2020-11-16
+66;History;A. J. Baime;The Accidental President;2017;14;2020-11-17
+67;History;M. MacMillan;War;2020;13;2020-11-18
+68;History;M. MacMillan;War;2020;13;2020-11-19
+69;History;M. MacMillan;War;2020;13;2020-11-20
+70;History;M. MacMillan;War;2020;13;2020-11-21
+71;History;M. MacMillan;War;2020;13;2020-11-22
+72;History;M. MacMillan;War;2020;13;2020-11-23
+73;History;M. MacMillan;War;2020;13;2020-11-24
+74;History;M. MacMillan;War;2020;13;2020-11-25
+75;Psychology;D. Kahneman;Thinking Fast and Slow;2011;9;2020-11-26
+76;Psychology;D. Kahneman;Thinking Fast and Slow;2011;9;2020-11-27
+77;Psychology;D. Kahneman;Thinking Fast and Slow;2011;9;2020-11-28
+78;Psychology;D. Kahneman;Thinking Fast and Slow;2011;9;2020-11-29
+79;Psychology;D. Kahneman;Thinking Fast and Slow;2011;9;2020-11-30
+80;Psychology;D. Kahneman;Thinking Fast and Slow;2011;9;2020-11-12
+81;Psychology;D. Kahneman;Thinking Fast and Slow;2011;9;2020-11-13
+82;Psychology;R. M. Sapolsky;Behave;2017;10;2020-11-14
+83;Psychology;R. M. Sapolsky;Behave;2017;10;2020-11-15
+84;Psychology;R. M. Sapolsky;Behave;2017;10;2020-11-16
+85;Psychology;R. M. Sapolsky;Behave;2017;10;2020-11-17
+86;Sci-fi;P. K. Dick;Ubik;1969;6;2020-11-18
+87;Sci-fi;P. K. Dick;Ubik;1969;6;2020-11-19
+88;Sci-fi;P. K. Dick;Ubik;1969;6;2020-11-20
+89;Sci-fi;P. K. Dick;Ubik;1969;6;2020-11-21
+90;Sci-fi;P. K. Dick;Ubik;1969;6;2020-11-22
+91;Sci-fi;P. K. Dick;Ubik;1969;6;2020-11-01
+92;Sci-fi;P. K. Dick;Ubik;1969;6;2020-11-02
+93;Sci-fi;P. K. Dick;Do Androids Dream of Electric Sheep?;1968;10;2020-11-03
+94;Sci-fi;P. K. Dick;Do Androids Dream of Electric Sheep?;1968;10;2020-11-04
+95;Sci-fi;P. K. Dick;Do Androids Dream of Electric Sheep?;1968;10;2020-11-05
+96;Sci-fi;P. K. Dick;Do Androids Dream of Electric Sheep?;1968;10;2020-11-06
+97;Sci-fi;P. K. Dick;Do Androids Dream of Electric Sheep?;1968;10;2020-11-07
+98;Sci-fi;P. K. Dick;Do Androids Dream of Electric Sheep?;1968;10;2020-11-08
+99;Sci-fi;P. K. Dick;Do Androids Dream of Electric Sheep?;1968;10;2020-11-09
+100;Sci-fi;P. K. Dick;Do Androids Dream of Electric Sheep?;1968;10;2020-11-10
+101;Sci-fi;P. K. Dick;Do Androids Dream of Electric Sheep?;1968;10;2020-11-11
+102;Sci-fi;P. K. Dick;Do Androids Dream of Electric Sheep?;1968;10;2020-11-12
+103;Cooking;J. Oliver;5 Ingredients;2015;15;2020-11-13
+104;Cooking;J. Oliver;15-Minute Meals;2014;15;2020-11-14
