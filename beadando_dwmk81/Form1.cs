@@ -16,15 +16,15 @@ namespace beadando_dwmk81
     public partial class Form1 : Form
     {
         public static List<Book> Store = new List<Book>();
-        
+                        
         public Form1()
         {
             InitializeComponent();
 
             LoadStore();
-            
-            
-            
+            SalesUserControl salesUserControl = new SalesUserControl();
+            panel1.Controls.Add(salesUserControl);
+            salesUserControl.Dock = DockStyle.Fill;
         }
 
         private void saleBtn_Click(object sender, EventArgs e)
