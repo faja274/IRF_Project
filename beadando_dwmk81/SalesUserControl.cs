@@ -14,15 +14,17 @@ namespace beadando_dwmk81
 {
     public partial class SalesUserControl : UserControl
     {
-        public double income=0;
+        
         
         public SalesUserControl()
         {
             InitializeComponent();
             BookListing();
-            
-            
+            incomeLbl.Text = "Daily income: " + Form1.income.ToString();
+
         }
+
+        
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -71,12 +73,12 @@ namespace beadando_dwmk81
             }
             else
             {
-                income = income + book.Price;
+                Form1.income = Form1.income + book.Price;
                 book.Amount = book.Amount - 1;
 
             }
 
-            incomeLbl.Text = "Daily income: " + income.ToString();
+            incomeLbl.Text = "Daily income: " + Form1.income.ToString();
 
             if (book.Amount==0)
             {

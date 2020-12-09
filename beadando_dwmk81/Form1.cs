@@ -16,11 +16,11 @@ namespace beadando_dwmk81
     public partial class Form1 : Form
     {
         public static List<Book> Store = new List<Book>();
-                        
+        public static double income = 0;
         public Form1()
         {
             InitializeComponent();
-
+            
             LoadStore();
             SalesUserControl salesUserControl = new SalesUserControl();
             panel1.Controls.Add(salesUserControl);
