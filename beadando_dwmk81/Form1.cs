@@ -91,6 +91,12 @@ namespace beadando_dwmk81
             return books;
         }
 
-        
+        private void uploadBtn_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UploadUserControl uploadUserControl = new UploadUserControl();
+            panel1.Controls.Add(uploadUserControl);
+            uploadUserControl.Dock = DockStyle.Fill;
+        }
     }
 }

@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
@@ -68,6 +69,12 @@
     <Compile Include="StatsUserControl.Designer.cs">
       <DependentUpon>StatsUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UploadUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UploadUserControl.Designer.cs">
+      <DependentUpon>UploadUserControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StatsUserControl.resx">
       <DependentUpon>StatsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadUserControl.resx">
+      <DependentUpon>UploadUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="eladasok.csv" />
     <None Include="Properties\DataSources\beadando_dwmk81.Entities.Book.datasource" />

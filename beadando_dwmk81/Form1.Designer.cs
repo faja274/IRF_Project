@@ -72,6 +72,7 @@
             this.uploadBtn.TabIndex = 3;
             this.uploadBtn.Text = "Store Upload";
             this.uploadBtn.UseVisualStyleBackColor = true;
+            this.uploadBtn.Click += new System.EventHandler(this.uploadBtn_Click);
             // 
             // Form1
             // 
