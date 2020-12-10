@@ -17,6 +17,7 @@ namespace beadando_dwmk81
     {
         public static List<Book> Store = new List<Book>();
         public static double income = 0;
+        public static List<Book> Sold = new List<Book>();
         public Form1()
         {
             InitializeComponent();

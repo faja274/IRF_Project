@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using beadando_dwmk81.Entities;
 using System.Globalization;
 using System.IO;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace beadando_dwmk81
 {
@@ -81,6 +82,31 @@ namespace beadando_dwmk81
 
             incomeLbl.Text = "Daily income: " + Form1.income.ToString();
 
+            int sold = (from x in Form1.Sold
+                        where x.Title == book.Title && x.Author == book.Author
+                        select x).Count();
+            if (sold==0)
+            {
+                Book newlysold = new Book();
+                newlysold.Topic = book.Topic;
+                newlysold.Author = book.Author;
+                newlysold.Title = book.Title;
+                newlysold.Price = book.Price;
+                newlysold.Amount = 1;
+            }
+
+            else
+            {
+                foreach (Book item in Form1.Sold)
+                {
+                    if (item.Title==book.Title && item.Author==book.Author)
+                    {
+                        item.Amount++;
+                    }
+                }
+            }
+
+
             if (book.Amount==0)
             {
                 Form1.Store.Remove(book);
@@ -100,8 +126,19 @@ namespace beadando_dwmk81
                 sw.WriteLine(book.Topic + ';'+book.Author+';'+book.Title+';'+book.Year.ToString()+';'+book.Price.ToString()+';'+book.Amount.ToString());
             }
 
-
             sw.Close();
+
+
+            StreamWriter streamw = new StreamWriter("dailysales.csv");
+            sw.WriteLine("TOPIC; AUTHOR; TITLE; YEAR; PRICE; AMOUNT");
+            foreach (var book in Form1.Sold)
+            {
+                sw.WriteLine(book.Topic + ';' + book.Author + ';' + book.Title + ';' + book.Year.ToString() + ';' + book.Price.ToString() + ';' + book.Amount.ToString());
+            }
+
+            
+            streamw.Close();
+
             Application.Exit();
             
         }
