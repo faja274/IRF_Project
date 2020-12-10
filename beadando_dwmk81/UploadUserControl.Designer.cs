@@ -55,6 +55,8 @@
             this.authorTextBox.Name = "authorTextBox";
             this.authorTextBox.Size = new System.Drawing.Size(165, 20);
             this.authorTextBox.TabIndex = 0;
+            this.authorTextBox.TextChanged += new System.EventHandler(this.authorTextBox_TextChanged);
+            this.authorTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.authorTextBox_Validating);
             // 
             // titleTextBox
             // 
@@ -62,6 +64,8 @@
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(165, 20);
             this.titleTextBox.TabIndex = 1;
+            this.titleTextBox.TextChanged += new System.EventHandler(this.titleTextBox_TextChanged);
+            this.titleTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.titleTextBox_Validating);
             // 
             // amountTextBox
             // 
@@ -69,6 +73,8 @@
             this.amountTextBox.Name = "amountTextBox";
             this.amountTextBox.Size = new System.Drawing.Size(71, 20);
             this.amountTextBox.TabIndex = 2;
+            this.amountTextBox.TextChanged += new System.EventHandler(this.amountTextBox_TextChanged);
+            this.amountTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.amountTextBox_Validating);
             // 
             // submitBtn
             // 
@@ -113,6 +119,8 @@
             this.topicTextBox.Name = "topicTextBox";
             this.topicTextBox.Size = new System.Drawing.Size(165, 20);
             this.topicTextBox.TabIndex = 7;
+            this.topicTextBox.TextChanged += new System.EventHandler(this.topicTextBox_TextChanged);
+            this.topicTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.topicTextBox_Validating);
             // 
             // label4
             // 
@@ -139,6 +147,8 @@
             this.yearTextBox.Name = "yearTextBox";
             this.yearTextBox.Size = new System.Drawing.Size(71, 20);
             this.yearTextBox.TabIndex = 10;
+            this.yearTextBox.TextChanged += new System.EventHandler(this.yearTextBox_TextChanged);
+            this.yearTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.yearTextBox_Validating);
             // 
             // label5
             // 
@@ -171,6 +181,8 @@
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(71, 20);
             this.priceTextBox.TabIndex = 14;
+            this.priceTextBox.TextChanged += new System.EventHandler(this.priceTextBox_TextChanged);
+            this.priceTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.priceTextBox_Validating);
             // 
             // label6
             // 
@@ -206,6 +218,8 @@
             this.listedAmountTxtBox.Name = "listedAmountTxtBox";
             this.listedAmountTxtBox.Size = new System.Drawing.Size(71, 20);
             this.listedAmountTxtBox.TabIndex = 16;
+            this.listedAmountTxtBox.TextChanged += new System.EventHandler(this.listedAmountTxtBox_TextChanged);
+            this.listedAmountTxtBox.Validating += new System.ComponentModel.CancelEventHandler(this.listedAmountTxtBox_Validating);
             // 
             // UploadUserControl
             // 

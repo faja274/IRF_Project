@@ -52,11 +52,13 @@ namespace beadando_dwmk81
         private void storeBtn_Click(object sender, EventArgs e)
         {
             StoreStats();
+            label1.Text = "Distribution of the books in the strore";
         }
 
         private void soldBtn_Click(object sender, EventArgs e)
         {
             SoldStats();
+            label1.Text = "Distribution of the books sold today";
         }
     }
 }
