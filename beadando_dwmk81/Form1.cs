@@ -28,6 +28,7 @@ namespace beadando_dwmk81
             salesUserControl.Dock = DockStyle.Fill;
         }
 
+        //UC-k betöltése
         private void saleBtn_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
@@ -45,11 +46,20 @@ namespace beadando_dwmk81
             statsUserControl.Dock = DockStyle.Fill;
         }
 
+        private void uploadBtn_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UploadUserControl uploadUserControl = new UploadUserControl();
+            panel1.Controls.Add(uploadUserControl);
+            uploadUserControl.Dock = DockStyle.Fill;
+        }
+
+        //fájl beolvasása
         private void LoadStore()
         {
            
             Store.Clear();
-            using (StreamReader sr = new StreamReader("eladasok.csv", Encoding.UTF8))
+            using (StreamReader sr = new StreamReader("bookstore.csv", Encoding.UTF8))
             {
                 sr.ReadLine();
                 while (!sr.EndOfStream)
@@ -68,36 +78,9 @@ namespace beadando_dwmk81
 
         }
 
-        public List<Book> GetBooks()
-        {
-            List<Book> books = new List<Book>();
 
-            using (StreamReader sr = new StreamReader("eladasok.csv", Encoding.UTF8))
-            {
-                sr.ReadLine();
-                while (!sr.EndOfStream)
-                {
-                    string[] line = sr.ReadLine().Split(';');
-                    Book b = new Book();
-                    b.Topic = line[0];
-                    b.Author = line[1];
-                    b.Title = line[2];
-                    b.Year = Int32.Parse(line[3]);
-                    b.Price = Double.Parse(line[4]);
-                    b.Amount = Int32.Parse(line[5]);
-                    books.Add(b);
-                }
-            }
+        
 
-            return books;
-        }
-
-        private void uploadBtn_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            UploadUserControl uploadUserControl = new UploadUserControl();
-            panel1.Controls.Add(uploadUserControl);
-            uploadUserControl.Dock = DockStyle.Fill;
-        }
+        
     }
 }

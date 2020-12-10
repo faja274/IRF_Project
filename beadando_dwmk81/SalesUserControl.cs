@@ -54,6 +54,8 @@ namespace beadando_dwmk81
 
         private void salesBtn_Click(object sender, EventArgs e)
         {
+            //kockadobás az ingyenes könyvért
+
             int dicecount=0;
             Random rnd = new Random();
             int nr1 = rnd.Next(1, 7);
@@ -65,6 +67,8 @@ namespace beadando_dwmk81
             int nr3 = rnd.Next(1, 7);
             kocka3.Text = nr3.ToString();
             dicecount = dicecount + nr3;
+
+            //fizetés és könyv kivezetése
 
             Book book = (Book)searchedListBox.SelectedItem;
 
@@ -80,7 +84,11 @@ namespace beadando_dwmk81
 
             }
 
+            //napi bevétel kimutatása
+
             incomeLbl.Text = "Daily income: " + Form1.income.ToString();
+
+            //eladási lista frissítése
 
             int sold = (from x in Form1.Sold
                         where x.Title == book.Title && x.Author == book.Author
@@ -90,9 +98,11 @@ namespace beadando_dwmk81
                 Book newlysold = new Book();
                 newlysold.Topic = book.Topic;
                 newlysold.Author = book.Author;
+                newlysold.Year = book.Year;
                 newlysold.Title = book.Title;
                 newlysold.Price = book.Price;
                 newlysold.Amount = 1;
+                Form1.Sold.Add(newlysold);
             }
 
             else
@@ -117,9 +127,10 @@ namespace beadando_dwmk81
             amountLbl.Text= "We have " + book.Amount.ToString() + " of this book.";
         }
 
+        //kiírás fájlba
         private void dayCloseBtn_Click(object sender, EventArgs e)
         {
-            StreamWriter sw = new StreamWriter("eladasok.csv");
+            StreamWriter sw = new StreamWriter("bookstore.csv");
             sw.WriteLine("TOPIC; AUTHOR; TITLE; YEAR; PRICE; AMOUNT");
             foreach (var book in Form1.Store)
             {
@@ -130,10 +141,10 @@ namespace beadando_dwmk81
 
 
             StreamWriter streamw = new StreamWriter("dailysales.csv");
-            sw.WriteLine("TOPIC; AUTHOR; TITLE; YEAR; PRICE; AMOUNT");
+            streamw.WriteLine("TOPIC; AUTHOR; TITLE; YEAR; PRICE; AMOUNT");
             foreach (var book in Form1.Sold)
             {
-                sw.WriteLine(book.Topic + ';' + book.Author + ';' + book.Title + ';' + book.Year.ToString() + ';' + book.Price.ToString() + ';' + book.Amount.ToString());
+                streamw.WriteLine(book.Topic + ';' + book.Author + ';' + book.Title + ';' + book.Year.ToString() + ';' + book.Price.ToString() + ';' + book.Amount.ToString());
             }
 
             

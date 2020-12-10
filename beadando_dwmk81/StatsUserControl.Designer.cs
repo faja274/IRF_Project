@@ -34,11 +34,13 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.storeBtn = new System.Windows.Forms.Button();
+            this.soldBtn = new System.Windows.Forms.Button();
             this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.topicDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
@@ -59,6 +61,7 @@
             // 
             // chart1
             // 
+            this.chart1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -81,22 +84,6 @@
             this.chart1.TabIndex = 3;
             this.chart1.Text = "chart1";
             // 
-            // bookBindingSource
-            // 
-            this.bookBindingSource.DataSource = typeof(beadando_dwmk81.Entities.Book);
-            // 
-            // topicDataGridViewTextBoxColumn
-            // 
-            this.topicDataGridViewTextBoxColumn.DataPropertyName = "Topic";
-            this.topicDataGridViewTextBoxColumn.HeaderText = "Topic";
-            this.topicDataGridViewTextBoxColumn.Name = "topicDataGridViewTextBoxColumn";
-            // 
-            // amountDataGridViewTextBoxColumn
-            // 
-            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
-            this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
-            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -117,11 +104,49 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "based on topic";
             // 
+            // storeBtn
+            // 
+            this.storeBtn.Location = new System.Drawing.Point(36, 70);
+            this.storeBtn.Name = "storeBtn";
+            this.storeBtn.Size = new System.Drawing.Size(100, 23);
+            this.storeBtn.TabIndex = 6;
+            this.storeBtn.Text = "Store Stats";
+            this.storeBtn.UseVisualStyleBackColor = true;
+            this.storeBtn.Click += new System.EventHandler(this.storeBtn_Click);
+            // 
+            // soldBtn
+            // 
+            this.soldBtn.Location = new System.Drawing.Point(180, 70);
+            this.soldBtn.Name = "soldBtn";
+            this.soldBtn.Size = new System.Drawing.Size(100, 23);
+            this.soldBtn.TabIndex = 7;
+            this.soldBtn.Text = "Sales Stats";
+            this.soldBtn.UseVisualStyleBackColor = true;
+            this.soldBtn.Click += new System.EventHandler(this.soldBtn_Click);
+            // 
+            // bookBindingSource
+            // 
+            this.bookBindingSource.DataSource = typeof(beadando_dwmk81.Entities.Book);
+            // 
+            // topicDataGridViewTextBoxColumn
+            // 
+            this.topicDataGridViewTextBoxColumn.DataPropertyName = "Topic";
+            this.topicDataGridViewTextBoxColumn.HeaderText = "Topic";
+            this.topicDataGridViewTextBoxColumn.Name = "topicDataGridViewTextBoxColumn";
+            // 
+            // amountDataGridViewTextBoxColumn
+            // 
+            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
+            this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
+            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
+            // 
             // StatsUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Controls.Add(this.soldBtn);
+            this.Controls.Add(this.storeBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chart1);
@@ -144,5 +169,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button storeBtn;
+        private System.Windows.Forms.Button soldBtn;
     }
 }

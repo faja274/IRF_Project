@@ -21,6 +21,8 @@ namespace beadando_dwmk81
             BookListing();
         }
 
+        //új könyv felvitele
+
         private void submitBtn_Click(object sender, EventArgs e)
         {
             string author = authorTextBox.Text;
@@ -63,7 +65,7 @@ namespace beadando_dwmk81
         }
 
 
-
+        //lista feltöltése
         private void BookListing()
         {
             var titles = from b in Form1.Store
@@ -79,6 +81,8 @@ namespace beadando_dwmk81
         {
             BookListing();
         }
+
+        //már raktáron tartott könyvek utánpótlása
 
         private void listedSubmitBtn_Click(object sender, EventArgs e)
         {
