@@ -47,10 +47,18 @@ namespace beadando_dwmk81
                     Price=price
                 };
                 Form1.Store.Add(b);
+
+                authorTextBox.Text = "";
+                titleTextBox.Text = "";
+                topicTextBox.Text = "";
+                yearTextBox.Text = "";
+                amountTextBox.Text = "";
+                priceTextBox.Text = "";
             }
             else
             {
-                MessageBox.Show("We already have this book, please register it on the left side of this panel.");
+
+                MessageBox.Show("We already have this kind of book, please load it from the list.");
             }
         }
 
@@ -70,6 +78,13 @@ namespace beadando_dwmk81
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             BookListing();
+        }
+
+        private void listedSubmitBtn_Click(object sender, EventArgs e)
+        {
+            Book book = (Book)searchedListBox.SelectedItem;
+            book.Amount = Int32.Parse(listedAmountTxtBox.Text) + book.Amount;
+            listedAmountTxtBox.Text = "";
         }
     }
 }
