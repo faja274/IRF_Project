@@ -37,6 +37,7 @@
             this.kocka3 = new System.Windows.Forms.Button();
             this.salesBtn = new System.Windows.Forms.Button();
             this.incomeLbl = new System.Windows.Forms.Label();
+            this.dayCloseBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -120,11 +121,22 @@
             this.incomeLbl.TabIndex = 8;
             this.incomeLbl.Text = "Daily income:";
             // 
+            // dayCloseBtn
+            // 
+            this.dayCloseBtn.Location = new System.Drawing.Point(601, 321);
+            this.dayCloseBtn.Name = "dayCloseBtn";
+            this.dayCloseBtn.Size = new System.Drawing.Size(75, 23);
+            this.dayCloseBtn.TabIndex = 9;
+            this.dayCloseBtn.Text = "Close day";
+            this.dayCloseBtn.UseVisualStyleBackColor = true;
+            this.dayCloseBtn.Click += new System.EventHandler(this.dayCloseBtn_Click);
+            // 
             // SalesUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.Controls.Add(this.dayCloseBtn);
             this.Controls.Add(this.incomeLbl);
             this.Controls.Add(this.salesBtn);
             this.Controls.Add(this.kocka3);
@@ -152,5 +164,6 @@
         private System.Windows.Forms.Button kocka3;
         private System.Windows.Forms.Button salesBtn;
         private System.Windows.Forms.Label incomeLbl;
+        private System.Windows.Forms.Button dayCloseBtn;
     }
 }

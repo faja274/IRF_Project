@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using beadando_dwmk81.Entities;
 using System.Globalization;
+using System.IO;
 
 namespace beadando_dwmk81
 {
@@ -90,6 +91,19 @@ namespace beadando_dwmk81
             amountLbl.Text= "We have " + book.Amount.ToString() + " of this book.";
         }
 
-        
+        private void dayCloseBtn_Click(object sender, EventArgs e)
+        {
+            StreamWriter sw = new StreamWriter("eladasok.csv");
+            sw.WriteLine("TOPIC; AUTHOR; TITLE; YEAR; PRICE; AMOUNT");
+            foreach (var book in Form1.Store)
+            {
+                sw.WriteLine(book.Topic + ';'+book.Author+';'+book.Title+';'+book.Year.ToString()+';'+book.Price.ToString()+';'+book.Amount.ToString());
+            }
+
+
+            sw.Close();
+            Application.Exit();
+            
+        }
     }
 }
