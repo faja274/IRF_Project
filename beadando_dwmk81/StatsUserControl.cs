@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using beadando_dwmk81.Entities;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace beadando_dwmk81
 {
@@ -17,6 +18,7 @@ namespace beadando_dwmk81
         {
             InitializeComponent();
             StoreStats();
+            
         }
 
         private void StoreStats()
