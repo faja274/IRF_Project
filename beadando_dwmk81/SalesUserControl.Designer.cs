@@ -38,7 +38,6 @@
             this.kocka3 = new System.Windows.Forms.Button();
             this.salesBtn = new System.Windows.Forms.Button();
             this.incomeLbl = new System.Windows.Forms.Label();
-            this.dayCloseBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -133,22 +132,11 @@
             this.incomeLbl.BackColor = System.Drawing.Color.Transparent;
             this.incomeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.incomeLbl.ForeColor = System.Drawing.Color.White;
-            this.incomeLbl.Location = new System.Drawing.Point(366, 329);
+            this.incomeLbl.Location = new System.Drawing.Point(401, 315);
             this.incomeLbl.Name = "incomeLbl";
             this.incomeLbl.Size = new System.Drawing.Size(81, 15);
             this.incomeLbl.TabIndex = 8;
             this.incomeLbl.Text = "Daily income:";
-            // 
-            // dayCloseBtn
-            // 
-            this.dayCloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dayCloseBtn.Location = new System.Drawing.Point(601, 321);
-            this.dayCloseBtn.Name = "dayCloseBtn";
-            this.dayCloseBtn.Size = new System.Drawing.Size(75, 23);
-            this.dayCloseBtn.TabIndex = 9;
-            this.dayCloseBtn.Text = "Close day";
-            this.dayCloseBtn.UseVisualStyleBackColor = true;
-            this.dayCloseBtn.Click += new System.EventHandler(this.dayCloseBtn_Click);
             // 
             // label2
             // 
@@ -169,7 +157,6 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dayCloseBtn);
             this.Controls.Add(this.incomeLbl);
             this.Controls.Add(this.salesBtn);
             this.Controls.Add(this.kocka3);
@@ -197,7 +184,6 @@
         private System.Windows.Forms.Button kocka3;
         private System.Windows.Forms.Button salesBtn;
         private System.Windows.Forms.Label incomeLbl;
-        private System.Windows.Forms.Button dayCloseBtn;
         private System.Windows.Forms.Label label2;
     }
 }

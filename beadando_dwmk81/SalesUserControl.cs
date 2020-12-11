@@ -127,31 +127,6 @@ namespace beadando_dwmk81
             amountLbl.Text= "We have " + book.Amount.ToString() + " of this book.";
         }
 
-        //kiírás fájlba
-        private void dayCloseBtn_Click(object sender, EventArgs e)
-        {
-            StreamWriter sw = new StreamWriter("bookstore.csv");
-            sw.WriteLine("TOPIC; AUTHOR; TITLE; YEAR; PRICE; AMOUNT");
-            foreach (var book in Form1.Store)
-            {
-                sw.WriteLine(book.Topic + ';'+book.Author+';'+book.Title+';'+book.Year.ToString()+';'+book.Price.ToString()+';'+book.Amount.ToString());
-            }
-
-            sw.Close();
-
-
-            StreamWriter streamw = new StreamWriter("dailysales.csv");
-            streamw.WriteLine("TOPIC; AUTHOR; TITLE; YEAR; PRICE; AMOUNT");
-            foreach (var book in Form1.Sold)
-            {
-                streamw.WriteLine(book.Topic + ';' + book.Author + ';' + book.Title + ';' + book.Year.ToString() + ';' + book.Price.ToString() + ';' + book.Amount.ToString());
-            }
-
-            
-            streamw.Close();
-
-            Application.Exit();
-            
-        }
+        
     }
 }

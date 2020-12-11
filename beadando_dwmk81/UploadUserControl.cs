@@ -51,18 +51,27 @@ namespace beadando_dwmk81
                 };
                 Form1.Store.Add(b);
 
-                authorTextBox.Text = "";
-                titleTextBox.Text = "";
-                topicTextBox.Text = "";
-                yearTextBox.Text = "";
-                amountTextBox.Text = "";
-                priceTextBox.Text = "";
+                
             }
             else
             {
 
                 MessageBox.Show("We already have this kind of book, please load it from the list.");
             }
+
+            authorTextBox.Text = "";
+            titleTextBox.Text = "";
+            topicTextBox.Text = "";
+            yearTextBox.Text = "";
+            amountTextBox.Text = "";
+            priceTextBox.Text = "";
+
+            titleTextBox.BackColor = Color.White;
+            authorTextBox.BackColor = Color.White;
+            topicTextBox.BackColor = Color.White;
+            yearTextBox.BackColor = Color.White;
+            priceTextBox.BackColor = Color.White;
+            amountTextBox.BackColor = Color.White;
         }
 
 
@@ -90,6 +99,7 @@ namespace beadando_dwmk81
             Book book = (Book)searchedListBox.SelectedItem;
             book.Amount = Int32.Parse(listedAmountTxtBox.Text) + book.Amount;
             listedAmountTxtBox.Text = "";
+            listedAmountTxtBox.BackColor = Color.White;
         }
 
         //Validálások
@@ -150,7 +160,7 @@ namespace beadando_dwmk81
 
         private void authorTextBox_Validating(object sender, CancelEventArgs e)
         {
-            Regex regex = new Regex("^[a-zA-Z.]*$");
+            Regex regex = new Regex("^[a-zA-Z.]*");
             if (regex.IsMatch(authorTextBox.Text))
             {
                 e.Cancel = false;
@@ -168,7 +178,7 @@ namespace beadando_dwmk81
 
         private void titleTextBox_Validating(object sender, CancelEventArgs e)
         {
-            Regex regex = new Regex("^[a-zA-Z0-9,?!]*$");
+            Regex regex = new Regex("^[a-zA-Z0-9,?!]*");
             if (regex.IsMatch(titleTextBox.Text))
             {
                 e.Cancel = false;

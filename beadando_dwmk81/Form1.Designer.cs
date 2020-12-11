@@ -32,6 +32,7 @@
             this.statsBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.uploadBtn = new System.Windows.Forms.Button();
+            this.dayCloseBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // saleBtn
@@ -74,11 +75,22 @@
             this.uploadBtn.UseVisualStyleBackColor = true;
             this.uploadBtn.Click += new System.EventHandler(this.uploadBtn_Click);
             // 
+            // dayCloseBtn
+            // 
+            this.dayCloseBtn.Location = new System.Drawing.Point(4, 189);
+            this.dayCloseBtn.Name = "dayCloseBtn";
+            this.dayCloseBtn.Size = new System.Drawing.Size(84, 23);
+            this.dayCloseBtn.TabIndex = 4;
+            this.dayCloseBtn.Text = "Close Day";
+            this.dayCloseBtn.UseVisualStyleBackColor = true;
+            this.dayCloseBtn.Click += new System.EventHandler(this.dayCloseBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dayCloseBtn);
             this.Controls.Add(this.uploadBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statsBtn);
@@ -95,6 +107,7 @@
         private System.Windows.Forms.Button statsBtn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button uploadBtn;
+        private System.Windows.Forms.Button dayCloseBtn;
     }
 }
 
