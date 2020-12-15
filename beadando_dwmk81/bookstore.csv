@@ -1,105 +1,27 @@
-﻿TOPIC;AUTHOR;TITLE;YEAR;PRICE;AMOUNT;
-Kids;J. K. Rowling;Harry Potter 1;1999;10;34;
-Kids;J. K. Rowling;Harry Potter 2;2001;10;35;
-Kids;J. K. Rowling;Harry Potter 3;2002;10;23;
-Kids;J. K. Rowling;Harry Potter 4;2004;13;41;
-Kids;J. K. Rowling;Harry Potter 5;2005;13;19;
-Kids;J. K. Rowling;Harry Potter 6;2006;13;30;
-Kids;J. K. Rowling;Harry Potter 7;2008;13;25;
-Kids;A. Wallace;How to Catch a Unicorn;2007;8;11;
-Kids;R. Riordan;The Lightning Thief;2005;11;9;
-Kids;E. Hill;Where's Spot?;2010;7;12;
-Kids;J. Donaldson;The Snail and the Whale;2013;9;20;
-Kids;J. Donaldson;Zog;2011;9;18;
-Kids;J. Kerr;The Tiger Who Came to Tea;2013;6;7;
-Sport;J. Wilson;Inverting The Pyramid;2008;15;20;
-Sport;M. Cox;The Mixer;2017;14;19;
-Sport;G. Hunter;Barca;2012;13;15;
-History;Y. N. Harari;Sapiens;2011;12;40;
-History;I. Wilkerson;The Warmth of Other Suns;2010;16;26;
-History;A. J. Baime;The Accidental President;2017;14;16;
-History;M. MacMillan;War;2020;13;15;
-Psychology;D. Kahneman;Thinking Fast and Slow;2011;9;27;
-Psychology;R. M. Sapolsky;Behave;2017;10;20;
-Sci-fi;P. K. Dick;Ubik;1969;6;3;
-Sci-fi;P. K. Dick;Do Androids Dream of Electric Sheep?;1968;10;19;
-Cooking;J. Oliver;5 Ingredients;2015;15;22;
-Cooking;J. Oliver;15-Minute Meals;2014;15;24;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
+TOPIC; AUTHOR; TITLE; YEAR; PRICE; AMOUNT
+Kids;J. K. Rowling;Harry Potter 1;1999;10;29
+Kids;J. K. Rowling;Harry Potter 2;2001;10;32
+Kids;J. K. Rowling;Harry Potter 3;2002;10;25
+Kids;J. K. Rowling;Harry Potter 4;2004;13;37
+Kids;J. K. Rowling;Harry Potter 5;2005;13;19
+Kids;J. K. Rowling;Harry Potter 6;2006;13;30
+Kids;J. K. Rowling;Harry Potter 7;2008;13;25
+Kids;A. Wallace;How to Catch a Unicorn;2007;8;11
+Kids;R. Riordan;The Lightning Thief;2005;11;9
+Kids;E. Hill;Where's Spot?;2010;7;12
+Kids;J. Donaldson;The Snail and the Whale;2013;9;20
+Kids;J. Donaldson;Zog;2011;9;18
+Kids;J. Kerr;The Tiger Who Came to Tea;2013;6;7
+Sport;J. Wilson;Inverting The Pyramid;2008;15;20
+Sport;M. Cox;The Mixer;2017;14;19
+Sport;G. Hunter;Barca;2012;13;15
+History;Y. N. Harari;Sapiens;2011;12;40
+History;I. Wilkerson;The Warmth of Other Suns;2010;16;26
+History;A. J. Baime;The Accidental President;2017;14;16
+History;M. MacMillan;War;2020;13;15
+Psychology;D. Kahneman;Thinking Fast and Slow;2011;9;35
+Psychology;R. M. Sapolsky;Behave;2017;10;20
+Sci-fi;P. K. Dick;Ubik;1969;6;3
+Sci-fi;P. K. Dick;Do Androids Dream of Electric Sheep?;1968;10;19
+Cooking;J. Oliver;5 Ingredients;2015;15;22
+Cooking;J. Oliver;15-Minute Meals;2014;15;24
